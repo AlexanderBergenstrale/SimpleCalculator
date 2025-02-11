@@ -26,7 +26,7 @@ public class App {
         return result;
     }
 
-    protected static int arithmetize(String operation, int left, int right) {
+    private static int arithmetize(String operation, int left, int right) {
         return switch (operation) {
             case "+" -> left + right;
             case "-" -> left - right;
