@@ -39,7 +39,7 @@ public class AppTest {
     }
 
     @Test
-    void calculateDoesntConsiderOrderOfOperations() {
+    void calculateDoesNotConsiderOrderOfOperations() {
         var expected = 11;
         var result = App.calculate("5 + 2 * 3");
 
