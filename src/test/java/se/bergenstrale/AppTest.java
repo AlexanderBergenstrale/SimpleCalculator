@@ -37,6 +37,7 @@ public class AppTest {
 
         Assertions.assertEquals(expected, result);
     }
+
     @Test
     void calculateDoesntConsiderOrderOfOperations() {
         var expected = 11;
@@ -47,6 +48,6 @@ public class AppTest {
 
     @Test
     void calculateThrowsOnBadCharacter() {
-        Assertions.assertThrows(InputMismatchException.class, () -> App.calculate("2 + 3v") );
+        Assertions.assertThrows(InputMismatchException.class, () -> App.calculate("2 + 3v"));
     }
 }
